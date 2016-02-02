@@ -13,7 +13,7 @@ program: $(CPP_OBJ_FILES)
 
 %.o: %.cpp $(H_FILES)
 	@echo "Building $@"
-	g++ $< -I -std=c++11 PUT_COMPILER_ARGS_HERE -c -o $@ -g
+	g++ $< -std=c++11 PUT_COMPILER_ARGS_HERE -c -o $@ -g
 
 clean:
 	-rm -rf *.o
